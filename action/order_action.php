@@ -72,6 +72,7 @@
         $mail->Subject = "Order By:" . $order_email;
         $mail->Body = 
         "
+        <h3>New Order</h3>
         <p>Order Username: " . $order_username . "</p>
         <p>Order Email: " . $order_email . "</p>
         <p>Order Phone Number: " . $order_phone_number . "</p>
@@ -90,4 +91,40 @@
     } catch(Exception $e) {
         echo "Message could not be sent. Error", $mail->ErrorInfo;
     }
+?>
+
+<?php
+function sendMessage($telegram_id, $message_text, $secret_token) {
+    $url = "https://api.telegram.org/bot" . $secret_token . "/sendMessage?parse_mode=markdown&chat_id=" . $telegram_id;
+    $url = $url . "&text=" . urlencode($message_text);
+    $ch = curl_init();
+    $optArray = array(
+            CURLOPT_URL => $url,
+            CURLOPT_RETURNTRANSFER => true
+    );
+    curl_setopt_array($ch, $optArray);
+    $result = curl_exec($ch);
+    curl_close($ch);
+}
+
+$telegram_id = "785797048";
+$message_text = 
+"
+New Order
+Order Username: " . $order_username . "
+Order Email: " . $order_email . "
+Order Phone Number: " . $order_phone_number . "
+Order Item Id: " . $order_item_id . "
+Order Date: " . $order_date . "
+Order Amount: " . $order_amount . "
+Order Total Price: Rp." . $order_total_price. "
+Order Address: " . $order_address . "
+Order Geo Lat: " . $order_geo_lat . "
+Order Geo Lon: " . $order_geo_lon . "
+Order Message: " . $order_message . "
+";
+
+$secret_token = "921195620:AAFMfV7ptO2iI_NKf2CG0o45yrqDnFsQpFU";
+sendMessage($telegram_id, $message_text, $secret_token);
+echo "<script>alert('Pesan berhasil terkirim!'); window.location.href = './';</script>";
 ?>
