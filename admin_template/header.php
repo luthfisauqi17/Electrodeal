@@ -32,7 +32,6 @@
         <div class="sidebar">
             <ul>
                 <li><a href="admin_orders_view.php"><div><img class="icon" src="static/icon/new_owner.png" alt="">Orders</div></a></li>
-                <li><a href="admin_owner_view.php"><div><img class="icon" src="static/icon/new_owner.png" alt="">Customers</div></a></li>
                 <li><a href="admin_inv_view.php"><div><img class="icon" src="static/icon/inventory.png">Inventory</div></a></li>
                 <li><a href="admin_trans_view.php"><div><img class="icon" src="static/icon/transaction.png">Transaction History</div></a></li>
                 <li><a href="admin_statistic_view.php"><div><img class="icon" src="static/icon/pie-chart.png">Statistics</div></a></li>

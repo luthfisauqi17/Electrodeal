@@ -182,3 +182,52 @@ input[type=button] {
     margin-top: 0;
   }
 }
+
+.order_body {
+  border: 1px solid black;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order_content {
+  /* border: 1px solid black; */
+  width: 75%;
+}
+
+.order_confirmation .confirm_btn{
+  padding: 1rem;
+  background-color: lightgreen;
+  border: none;
+  margin-right: 0.5rem;
+  opacity: 0.8;
+}
+
+.order_confirmation .confirm_btn:hover{
+  padding: 1rem;
+  background-color: lightgreen;
+  border: none;
+  margin-right: 0.5rem;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.order_confirmation .cancel_btn{
+  padding: 1rem;
+  background-color: lightsalmon;
+  border: none;
+  opacity: 0.8;
+  color: #333;
+}
+
+.order_confirmation .cancel_btn:hover{
+  padding: 1rem;
+  background-color: lightsalmon;
+  border: none;
+  opacity: 1;
+  cursor: pointer;
+  color: #333;
+}
