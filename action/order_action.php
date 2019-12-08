@@ -73,12 +73,12 @@
         $mail->Body = 
         "
         <h3>New Order</h3>
+        <p>Order Item Id: " . $order_item_id . "</p>
+        <p>Order Amount: " . $order_amount . " Item/s</p>
         <p>Order Username: " . $order_username . "</p>
         <p>Order Email: " . $order_email . "</p>
         <p>Order Phone Number: " . $order_phone_number . "</p>
-        <p>Order Item Id: " . $order_item_id . "</p>
         <p>Order Date: " . $order_date . "</p>
-        <p>Order Amount: " . $order_amount . "</p>
         <p>Order Total Price: Rp." . $order_total_price. "</p>
         <p>Order Address: " . $order_address . "</p>
         <p>Order Geo Lat: " . $order_geo_lat . "</p>
@@ -111,12 +111,12 @@ $telegram_id = "785797048";
 $message_text = 
 "
 New Order
+Order Item Id: " . $order_item_id . "
+Order Amount: " . $order_amount . " Item/s
 Order Username: " . $order_username . "
 Order Email: " . $order_email . "
 Order Phone Number: " . $order_phone_number . "
-Order Item Id: " . $order_item_id . "
 Order Date: " . $order_date . "
-Order Amount: " . $order_amount . "
 Order Total Price: Rp." . $order_total_price. "
 Order Address: " . $order_address . "
 Order Geo Lat: " . $order_geo_lat . "

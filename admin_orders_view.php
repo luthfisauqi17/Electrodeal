@@ -22,9 +22,18 @@
     echo "<div style='background-color: lightgreen;'><p style='color: white;'>Confirmation Success!</p></div>";
 } ?>
 
+<?php if(isset($_GET["delete"])) {
+    echo "<div style='background-color: red;'><p style='color: white;'>Order " . $_GET["delete"] . "# Canceled</p></div>";
+} ?>
+
 <div id="map"></div>
 
-<div style="margin:1rem;"><h1>Orders List </h1><small>(<?php echo mysqli_num_rows($result) ?> order found)</small></div>
+<div style="margin:1rem;"><h1>Orders List </h1>
+<?php
+    if(mysqli_num_rows($result) > 1) echo "<small>" . mysqli_num_rows($result) . " Orders found </small>";
+    else echo "<small>" . mysqli_num_rows($result) . " Order found </small>";
+?>
+</div>
 
 <?php
     if (mysqli_num_rows($result) > 0) {

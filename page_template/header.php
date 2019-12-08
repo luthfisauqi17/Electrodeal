@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Electrodeal</title>
+    <link rel="shortcut icon" href="static/icon/electrodeal.png" type="image/x-icon">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -14,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <!-- Leaflet CDN -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 
@@ -24,12 +25,17 @@
             width: 100%;
             height: 30rem;
         }
+
+        .list-group-item:hover {
+            background-color: #b6ffff;
+            text-decoration: none;
+        }
     </style>
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-light navbar-light">
-        <a class="navbar-brand" href="index.php">ElectroDeal</a>
+    <nav style="background-color: #4ba3c7 !important;" class="navbar navbar-expand-md bg-light navbar-light">
+        <a style="display: flex; color: #333;" class="navbar-brand" href="index.php"><img style="width: 3rem;" class="main-icon" src="static/icon/electrodeal.png" alt="icon"><h1>ElectroDeal</h1></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>

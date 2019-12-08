@@ -69,9 +69,8 @@
 
 <div class="row">
     <div class="col-lg-3">
-        <h1 class="my-4">ElectroDeal</h1>
-        <div class="list-group">
-        <h4>Categories</h4>
+        <div style="background-color: #81d4fa !important; margin-top: 3rem;" class="list-group">
+        <h4 style="margin: 0.5rem;">Categories</h4>
         <a href='index.php' class='list-group-item'>All Categories</a>
         <?php 
             if(mysqli_num_rows($result_types)) {
@@ -113,7 +112,12 @@
     }
 ?>
 
-        <div class="row">
+<?php 
+  if(mysqli_num_rows($result) > 1) echo mysqli_num_rows($result) . " Items found";
+  else echo mysqli_num_rows($result) . " Item found";
+?>
+
+        <div style="margin-top: 1rem;" class="row">
             <?php 
                 if (mysqli_num_rows($result) > 0) {
                     while($row = mysqli_fetch_assoc($result)) { 
