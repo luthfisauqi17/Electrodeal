@@ -35,6 +35,8 @@
                 <li><a href="admin_inv_view.php"><div><img class="icon" src="static/icon/packing-list.png">Inventory</div></a></li>
                 <li><a href="admin_trans_view.php"><div><img class="icon" src="static/icon/order_history.png">Transaction History</div></a></li>
                 <li><a href="admin_statistic_view.php"><div><img class="icon" src="static/icon/order_statistic.png">Statistics</div></a></li>
+                <li><a href="admin_customer_view.php"><div><img class="icon" src="static/icon/customer-service.png">Customers</div></a></li>
+                <li><a href="admin_reports.php"><div><img class="icon" src="static/icon/report.png">Reports</div></a></li>
             </ul>
         </div>
         <div class="content">

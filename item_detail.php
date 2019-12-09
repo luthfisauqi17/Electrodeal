@@ -1,4 +1,8 @@
 <?php
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+
     $temp_item_id = '';
     $temp_item_name = '';
     $temp_item_desc = '';
@@ -46,8 +50,10 @@
             <h4>Rp.<?= $temp_item_price ?></h4>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">
                 <i class="fas fa-shopping-cart"></i> Order item
+                <button onclick="cartAddAjax();" type="button" class="btn btn-info ml-2">Add to cart</button>
+                <input id="username" type="hidden" name="" value=<?php echo $_SESSION["username"] ?>>
+                <input id="item_id" type="hidden" name="" value=<?php echo $temp_item_id ?>>
             </button>
-
 
 
             <!-- The Modal -->
@@ -175,6 +181,18 @@
             x.send();
             x.onreadystatechange=stateChanged;
         }
+
+        function cartAddAjax() {
+            username = document.getElementById("username").value;
+            item_id = document.getElementById("item_id").value;
+            x = new XMLHttpRequest();
+            x.open("GET","action/cart_add.php?username="+username+
+            "&item_id="+item_id
+            , true) 
+            x.send();
+            x.onreadystatechange=stateChanged;
+        }
+
         function stateChanged() { 
             if (x.readyState==4) { 
                 document.getElementById("res").innerHTML = "Data inserted successfully";

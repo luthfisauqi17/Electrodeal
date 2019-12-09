@@ -1,0 +1,76 @@
+Order Report 
+ 
+Confirmation date: 2019-12-07 
+Order Id: 13 
+Order Username: Luthfi Syauqi Magest 
+Order Email: sauqiluthfi877@gmail.com 
+Order Phone Number: 082293842149 
+Order Item Id: 3 
+Order date: 2019-12-07 
+Order Amount: 2 
+Order Total Price: 2998000 
+Order Address: Cikarang, Kab.Bekasi, Jawa Barat- 
+Order date: -0.3515602939922709 
+Order date: 113.27343106269838 
+Order Message: Color: Black 
+ 
+Transaction Id: 10
+Confirmation date: 2019-12-07 
+Order Id: 14 
+Order Username: Luthfi Syauqi Magest 
+Order Email: sauqiluthfi877@gmail.com 
+Order Phone Number: 082172239378 
+Order Item Id: 7 
+Order date: 2019-12-07 
+Order Amount: 1 
+Order Total Price: 729000 
+Order Address: Cikarang, Kab.Bekasi, Jawa Barat- 
+Order date: -38.01693813373223 
+Order date: 145.3886702656746 
+Order Message: Color: White 
+ 
+Transaction Id: 11
+Confirmation date: 2019-12-07 
+Order Id: 15 
+Order Username: dsad 
+Order Email: sauqiluthfi877@gmail.com 
+Order Phone Number: 4324124 
+Order Item Id: 7 
+Order date: 2019-12-07 
+Order Amount: 1 
+Order Total Price: 729000 
+Order Address: Cikarang, Kab.Bekasi, Jawa Barat- 
+Order date: -29.290226052801522 
+Order date: 142.31247425079349 
+Order Message: fsdfsd 
+ 
+Transaction Id: 12
+Confirmation date: 2019-12-08 
+Order Id: 2 
+Order Username: Luthfi Syauqi Magest 
+Order Email: sauqiluthfi877@gmail.com 
+Order Phone Number: 082172239378 
+Order Item Id: 2 
+Order date: 2019-12-08 
+Order Amount: 3 
+Order Total Price: 360000 
+Order Address: Cikarang, Kab.Bekasi, Jawa Barat- 
+Order date: -0.3054914305098707 
+Order date: 100.36928808669474 
+Order Message: Color: Black 
+ 
+Transaction Id: 13
+Confirmation date: 2019-12-08 
+Order Id: 1 
+Order Username: Alam  
+Order Email: alam@gmail.com 
+Order Phone Number: 08123451233452 
+Order Item Id: 2 
+Order date: 2019-12-08 
+Order Amount: 1 
+Order Total Price: 120000 
+Order Address: Bekasi 
+Order date: -6.2832850345622 
+Order date: 107.16675138453867 
+Order Message: Color: Black 
+ 

@@ -1,3 +1,15 @@
+<?php
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+
+    include("config/db_connect.php");
+    $cust_username = $_SESSION["username"];
+    $sql_profile_picture_navbar = "SELECT * FROM ed_customers WHERE customer_username = '$cust_username'";
+    $result_profile_picture_navbar = mysqli_query($conn, $sql_profile_picture_navbar);
+    $row_profile_picture_navbar = $result_profile_picture_navbar->fetch_assoc();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,11 +62,18 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
-                </li>
-
+            <ul class="navbar-nav ml-auto">
+                <?php 
+                    if(isset($_SESSION["username"])) {
+                        echo "<li class='nav-item'><a class='nav-link' href='index.php'><h5>Home</h5></a></li>";
+                        echo "<li class='nav-item'><a style='display: flex; align-items: center;' class='nav-link' href='customer_profile.php'><img style='width:30px;' src=" . $row_profile_picture_navbar["customer_pic"] . "><h5>" . $_SESSION["username"] . "</h5></a></li>";
+                        echo "<li class='nav-item'><a class='nav-link' href='login-customer.php'><h5>Logout</h5></a></li>";
+                    }
+                    else {
+                        echo "<li class='nav-item'><a class='nav-link' href='index.php'>Home</a></li>";
+                        echo "<li class='nav-item'><a class='nav-link' href='login-customer.php'>Login</a></li>";
+                    }
+                ?>              
             </ul>
         </div> 
     </nav>

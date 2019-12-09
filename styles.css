@@ -62,8 +62,25 @@ body {
     cursor: pointer;
 }
 
+.btn-register {
+    display: block;
+    margin: 0 auto;
+    width: 17rem;
+    height: 3rem;
+    border: none;
+    background-color: lightgreen;
+    border-radius: 3rem;
+    color: #FFFFFF;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 .btn:hover {
     background-color: #81d4fa;
+}
+
+.btn-register:hover {
+    background-color: rgb(98, 236, 98);
 }
 
 .footer {

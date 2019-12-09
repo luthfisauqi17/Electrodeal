@@ -232,3 +232,23 @@ input[type=button] {
   cursor: pointer;
   color: #333;
 }
+
+.load_report_btn {
+  background-color: lightskyblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.save_report_btn {
+  background-color: lightgreen;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1rem;
+}
