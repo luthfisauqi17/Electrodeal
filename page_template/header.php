@@ -30,6 +30,16 @@
             background-color: #b6ffff;
             text-decoration: none;
         }
+
+        .card:hover {
+            -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+        }
+
+        .card-title a {
+            text-decoration: none;
+        }
     </style>
 
 </head>

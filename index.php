@@ -47,12 +47,14 @@
         $output .= '<div class="carousel-item">';
       }
       $output .= '
-      <img style="filter: opacity(100%); width: 50%; height:50%; margin: auto; !important;" class="d-block img-fluid" src="'.$row['item_pic'].'" alt="'.$row['item_name'].'">
-        <div class="carousel-caption">
-          <h3 style="color: black; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;" class="display-4">'.$row['item_name'].'</h3>
-          <p style="color: black; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;">'. $row['item_capt'] .'</p>
+      <a href="item_detail.php?details='.$row["item_id"].'">
+        <img style="filter: opacity(100%); width: 50%; height:50%; margin: auto; !important;" class="d-block img-fluid" src="'.$row['item_pic'].'" alt="'.$row['item_name'].'">
+          <div class="carousel-caption">
+            <h3 style="color: black; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;" class="display-4">'.$row['item_name'].'</h3>
+            <p style="color: black; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;">'. $row['item_capt'] .'</p>
+          </div>
         </div>
-      </div>
+      </a>
       ';
       $count = $count + 1;
     }

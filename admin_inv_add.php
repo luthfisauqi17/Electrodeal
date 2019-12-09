@@ -111,11 +111,13 @@
             </div>
             <div class="col-75">
                 <select id="item_bg_color" name="item_bg_color">
-                <option value="light blue">Light Blue</option>
-                <option value="light orange">Light Orange</option>
-                <option value="light red">Light Red</option>
-                <option value="light green">Light Green</option>
-                <option value="light pink">Light Pink</option>
+                <option value="lightblue">Light Blue</option>
+                <option value="lightcoral">Light Coral</option>
+                <option value="lightsalmon">Light Salmon</option>
+                <option value="lightgreen">Light Green</option>
+                <option value="lightpink">Light Pink</option>
+                <option value="lightcyan">Light Cyan</option>
+                <option value="lightyellow">Light Yellow</option>
                 </select>
             </div>
         </div>
